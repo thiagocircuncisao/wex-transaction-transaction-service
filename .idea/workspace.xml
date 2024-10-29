@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8a640e-ab7a-4b6f-9abf-b9f98268696e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/ResponseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/YamlFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/controller/TransactionsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/exception/TransactionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/mapper/CurrencyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/mapper/TransactionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/model/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/model/PurchaseTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/presentation/CurrencyResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/presentation/MessageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/presentation/PurchaseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/presentation/PurchaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/presentation/RetrievePurchaseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/presentation/RetrievePurchaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/repository/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/repository/impl/CurrencyRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/service/TransactionsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/repository/impl/CurrencyRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/repository/impl/CurrencyRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +35,8 @@
     "Maven.transaction-service [clean,install].executor": "Run",
     "Maven.transaction-service [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/thiag/OneDrive/Documents/wex-transation-api/transaction-service/src/main/resources",
+    "last_opened_file_path": "C:/Users/thiag/OneDrive/Área de Trabalho/wex-transaction-api/wex-transaction-transaction-service",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
@@ -76,7 +56,7 @@
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thiagocircuncisao.Application" />
-      <module name="transaction-service" />
+      <module name="purchaseTransaction-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="thiagocircuncisao.*" />
@@ -111,6 +91,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/thiagocircuncisao/service/TransactionsService.java</url>
           <line>45</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/thiagocircuncisao/controller/TransactionsController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
