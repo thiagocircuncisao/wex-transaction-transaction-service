@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8a640e-ab7a-4b6f-9abf-b9f98268696e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/thiagocircuncisao/controller/TransactionsControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/thiagocircuncisao/repository/impl/CurrencyRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/thiagocircuncisao/service/TransactionsServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/WebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/repository/impl/CurrencyRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/repository/impl/CurrencyRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/ResponseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/configuration/ResponseExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/exception/TransactionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/exception/TransactionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/service/TransactionsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thiagocircuncisao/service/TransactionsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,21 +40,46 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Application.executor": "Debug",
+    "JUnit.CurrencyRepositoryImplTest.executor": "Run",
+    "JUnit.CurrencyRepositoryImplTest.getCurrenciesShouldReturnMapWhenApiCallIsSuccessful.executor": "Run",
+    "JUnit.CurrencyRepositoryImplTest.getCurrenciesShouldThrowRuntimeExceptionWhenApiCallFails.executor": "Run",
+    "JUnit.CurrencyRepositoryImplTest.getCurrency_ShouldThrowRuntimeException_WhenApiCallFails.executor": "Run",
+    "JUnit.TransactionsControllerTest.executor": "Run",
+    "JUnit.TransactionsControllerTest.shouldThrowCountryException.executor": "Run",
+    "JUnit.TransactionsControllerTest.shouldThrowCurrencyException.executor": "Run",
+    "JUnit.TransactionsServiceTest.testCreateTransactionInvalidAmount.executor": "Run",
+    "JUnit.TransactionsServiceTest.testCreateTransactionSuccess.executor": "Run",
+    "JUnit.TransactionsServiceTest.testGetTransactionByIdCurrencyNotFound.executor": "Run",
+    "JUnit.TransactionsServiceTest.testGetTransactionByIdSuccess.executor": "Run",
+    "JUnit.TransactionsServiceTest.testIsDateValidFutureDate.executor": "Run",
+    "JUnit.TransactionsServiceTest.testIsDateValidInvalidDate.executor": "Run",
+    "JUnit.TransactionsServiceTest.testIsDateValid_FutureDate.executor": "Run",
+    "JUnit.TransactionsServiceTest.testRetrieveCurrenciesSuccess.executor": "Run",
     "Maven. [clean,install].executor": "Run",
     "Maven.purchaseTransaction-service [clean...].executor": "Run",
     "Maven.transaction-service [clean,compile].executor": "Run",
     "Maven.transaction-service [clean,install].executor": "Run",
     "Maven.transaction-service [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/thiag/OneDrive/Área de Trabalho/wex-transaction-api/wex-transaction-transaction-service",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\thiag\OneDrive\Documents\wex-transation-api\transaction-service\src\main\resources" />
       <recent name="C:\Users\thiag\OneDrive\Documents\wex-transation-api\transaction-service\src\main\java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="thiagocircuncisao.service" />
+      <recent name="thiagocircuncisao.repository.impl" />
+      <recent name="thiagocircuncisao.controller" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -53,23 +89,93 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="thiagocircuncisao.Application" />
+  <component name="RunManager" selected="JUnit.CurrencyRepositoryImplTest">
+    <configuration name="CurrencyRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="purchaseTransaction-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="thiagocircuncisao.*" />
+          <option name="PATTERN" value="thiagocircuncisao.repository.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="thiagocircuncisao.repository.impl" />
+      <option name="MAIN_CLASS_NAME" value="thiagocircuncisao.repository.impl.CurrencyRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyRepositoryImplTest.getCurrenciesShouldReturnMapWhenApiCallIsSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="purchaseTransaction-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thiagocircuncisao.repository.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="thiagocircuncisao.repository.impl" />
+      <option name="MAIN_CLASS_NAME" value="thiagocircuncisao.repository.impl.CurrencyRepositoryImplTest" />
+      <option name="METHOD_NAME" value="getCurrenciesShouldReturnMapWhenApiCallIsSuccessful" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionsServiceTest.testIsDateValidFutureDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="purchaseTransaction-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thiagocircuncisao.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="thiagocircuncisao.service" />
+      <option name="MAIN_CLASS_NAME" value="thiagocircuncisao.service.TransactionsServiceTest" />
+      <option name="METHOD_NAME" value="testIsDateValidFutureDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionsServiceTest.testIsDateValidInvalidDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="purchaseTransaction-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thiagocircuncisao.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="thiagocircuncisao.service" />
+      <option name="MAIN_CLASS_NAME" value="thiagocircuncisao.service.TransactionsServiceTest" />
+      <option name="METHOD_NAME" value="testIsDateValidInvalidDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionsServiceTest.testRetrieveCurrenciesSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="purchaseTransaction-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thiagocircuncisao.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="thiagocircuncisao.service" />
+      <option name="MAIN_CLASS_NAME" value="thiagocircuncisao.service.TransactionsServiceTest" />
+      <option name="METHOD_NAME" value="testRetrieveCurrenciesSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.CurrencyRepositoryImplTest" />
+        <item itemvalue="JUnit.CurrencyRepositoryImplTest.getCurrenciesShouldReturnMapWhenApiCallIsSuccessful" />
+        <item itemvalue="JUnit.TransactionsServiceTest.testIsDateValidFutureDate" />
+        <item itemvalue="JUnit.TransactionsServiceTest.testIsDateValidInvalidDate" />
+        <item itemvalue="JUnit.TransactionsServiceTest.testRetrieveCurrenciesSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -88,14 +194,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/thiagocircuncisao/service/TransactionsService.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/thiagocircuncisao/controller/TransactionsController.java</url>
           <line>25</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/thiagocircuncisao/controller/TransactionsController.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/thiagocircuncisao/controller/TransactionsController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/thiagocircuncisao/service/TransactionsServiceTest.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

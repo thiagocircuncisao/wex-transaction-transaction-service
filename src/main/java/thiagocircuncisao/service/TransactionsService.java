@@ -87,10 +87,11 @@ public class TransactionsService {
     private void isDateValid(String dateText) {
         try {
             LocalDate.parse(dateText);
-            if (LocalDate.parse(dateText).isAfter(LocalDate.now()))
-                throw new TransactionException("Date must be before today");
         } catch (Exception e) {
             throw new TransactionException("Date invalid be sure it is in format yyyy-MM-dd,and the day and month are valid values");
         }
+
+        if (LocalDate.parse(dateText).isAfter(LocalDate.now()))
+            throw new TransactionException("Date must be before today");
     }
 }
